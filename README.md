@@ -15,9 +15,9 @@
 </strong>
 </div>
 
-# Demonstration project for GoEasyDesigner window designer
+# Startup template for electron of GoEasyDesigner
 
-Used to run the interface and program designed by the window designer
+Using electron technology
 
 ![GIF](https://user-images.githubusercontent.com/59047063/270091148-a89d2ab9-9ba3-4efc-b0fa-0a7dcc3bcfc1.gif)
 
