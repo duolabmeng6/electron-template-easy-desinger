@@ -12,8 +12,6 @@ function __aux_code() {
         Tabs1 : designData[0].childComponents[0].childComponents[1].childComponents[0],
         ContentArea1 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[0],
         登录框1 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[0].childComponents[0],
-        按钮1 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[0].childComponents[1],
-        编辑框1 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[0].childComponents[2],
         ContentArea2 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[1],
         Button1 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[1].childComponents[0],
         TextEdit5 : designData[0].childComponents[0].childComponents[1].childComponents[0].childComponents[1].childComponents[1],

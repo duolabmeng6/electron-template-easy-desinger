@@ -1,4 +1,4 @@
-import { app, ipcMain } from "electron";
+import {app, ipcMain, shell} from "electron";
 
 /**
  * 创建并设置主窗口的运行时行为
@@ -157,9 +157,10 @@ export function create_runtime_handle(mainWindow) {
   // 检查窗口是否正常
   ipcMain.handle('window-is-normal', () => mainWindow.isNormal());
 
-  // 在浏览器中打开URL
-  ipcMain.on('browser-open-url', (event, url) => require('electron').shell.openExternal(url));
-
+  // 在系统浏览器中打开URL
+  ipcMain.on('browser-open-url', (event, url) => {
+    shell.openExternal(url);
+  });
   // 获取环境变量
   ipcMain.handle('environment', () => process.env);
 
