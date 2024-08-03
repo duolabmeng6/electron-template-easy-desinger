@@ -14,8 +14,6 @@ export const __load_data = defineStore('window_data', {
     },
     actions: {
         async init() {
-          console.log("abc")
-
             BindWindowEvent(this, this.comps)
             try {
                 if (this.comps.Win.hasOwnProperty("event_created")) {
@@ -38,6 +36,7 @@ export const __load_data = defineStore('window_data', {
                 if (dthis.comps.Win.height.includes('v') || dthis.comps.Win.height.includes('%')) {
                     return;
                 }
+
                 systemFc.WindowSetSize(parseInt(dthis.comps.Win.width), parseInt(dthis.comps.Win.height))
                 //Recalculate the width and height of the client area
                 setTimeout(function () {
@@ -46,7 +45,8 @@ export const __load_data = defineStore('window_data', {
                     systemFc.WindowSetSize(parseInt(dthis.comps.Win.width) + WidthFix, parseInt(dthis.comps.Win.height) + HeightFix)
                     document.body.style.overflow = 'auto'
                 }, 1)
-                systemFc.WindowSetTitle(dthis.comps.Win.text)
+
+              systemFc.WindowSetTitle(dthis.comps.Win.text)
                 //Move to the center of the screen
                 systemFc.WindowCenter()
             } catch (e) {
