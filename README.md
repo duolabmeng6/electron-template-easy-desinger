@@ -1,5 +1,5 @@
-<p align="center" style="text-align: center">
 
+<p align="center" style="text-align: center">
 </p>
 
 <p align="center">
@@ -8,13 +8,10 @@
 <div align="center">
 <strong>
 <samp>
-
 [English](README.md) · [简体中文](README.zh-Hans.md)
-
 </samp>
 </strong>
 </div>
-
 
 # Demonstration project for GoEasyDesigner window designer
 
@@ -25,16 +22,16 @@ Used to run the interface and program designed by the window designer
 Create project:
 
 ```
-wails init -n "go-easy-demo" -t <https://github.com/duolabmeng6/wails-template-vue-go-easy>
+npx degit duolabmeng6/electron-template-easy-desinger go-easy-demo
 ```
 
 Run window:
 
 ```
 cd go-easy-demo
-wails dev
+pnpm install
+pnpm run dev
 ```
-
 
 Download GoEasyDesigner window designer (<https://github.com/duolabmeng6/GoEasyDesigner/releases>).
 
@@ -52,15 +49,15 @@ Click save after designing the interface. It will download two files (`design.js
 
 Download the code of this project and copy the `go-easy-demo` folder as the development project.
 
-`go-easy-demo/frontend/src/win/design.json`
+`go-easy-demo/src/renderer/src/win/design.json`
 
-`go-easy-demo/frontend/src/win/__aux_code.js`
+`go-easy-demo/src/renderer/src/win/__aux_code.js`
 
 Run the project to see the interface you designed.
 
 ```
 cd go-easy-demo
-wails dev
+pnpm run dev
 ```
 
 ## Project Setup
@@ -80,7 +77,7 @@ $ pnpm dev
 ### Build
 
 ```bash
-# For windows
+# For Windows
 $ pnpm build:win
 
 # For macOS
@@ -89,3 +86,4 @@ $ pnpm build:mac
 # For Linux
 $ pnpm build:linux
 ```
+
