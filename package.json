@@ -21,8 +21,10 @@
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
     "@guolao/vue-monaco-editor": "1.5.2",
+    "@iconify/vue": "^4.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "element-plus": "^2.7.8",
+    "jsefun": "^1.0.29",
     "mime-types": "^2.1.35",
     "monaco-editor": "0.50.0",
     "pinia": "^2.2.0",
@@ -31,8 +33,7 @@
     "uuid": "^10.0.0",
     "vue": "^3.4.35",
     "vue-i18n": "^9.13.1",
-    "vue3-sfc-loader": "^0.9.5",
-    "jsefun": "^1.0.29"
+    "vue3-sfc-loader": "^0.9.5"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.2",
@@ -45,10 +46,10 @@
     "eslint": "^9.8.0",
     "eslint-plugin-vue": "^9.27.0",
     "prettier": "^3.3.3",
-    "vite": "4.5.3",
-    "vue": "^3.4.35",
     "unplugin-auto-import": "^0.18.2",
     "unplugin-icons": "^0.19.1",
-    "unplugin-vue-components": "^0.27.3"
+    "unplugin-vue-components": "^0.27.3",
+    "vite": "4.5.3",
+    "vue": "^3.4.35"
   }
 }
